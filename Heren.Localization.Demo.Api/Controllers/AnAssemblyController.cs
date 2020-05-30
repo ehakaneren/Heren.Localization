@@ -8,9 +8,9 @@ namespace Heren.Localization.Demo.Api.Controllers
     [ApiController]
     public class AnAssemblyController : ControllerBase
     {
-        private readonly IStringLocalizer<Heren.Localizer.Demo.AnAssembly.AClass> _localizer;
+        private readonly IStringLocalizer<Heren.Localization.Demo.AnAssembly.AClass> _localizer;
 
-        public AnAssemblyController(IStringLocalizer<Heren.Localizer.Demo.AnAssembly.AClass> localizer)
+        public AnAssemblyController(IStringLocalizer<Heren.Localization.Demo.AnAssembly.AClass> localizer)
         {
             _localizer = localizer;
         }

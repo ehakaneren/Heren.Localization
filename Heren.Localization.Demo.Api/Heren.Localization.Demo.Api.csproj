@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Heren.Localization.Demo.AnAssembly\Heren.Localization.Demo.AnAssembly.csproj" />
     <ProjectReference Include="..\Heren.Localization\Heren.Localization.csproj" />
-    <ProjectReference Include="..\Heren.Localizer.Demo.AnAssembly\Heren.Localizer.Demo.AnAssembly.csproj" />
   </ItemGroup>
 
 

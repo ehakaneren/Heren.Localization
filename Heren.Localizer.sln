@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heren.Localization", "Heren
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heren.Localization.Demo.Api", "Heren.Localization.Demo.Api\Heren.Localization.Demo.Api.csproj", "{B4B49C94-D5DC-4A81-B782-C64023BB1084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heren.Localizer.Demo.AnAssembly", "Heren.Localizer.Demo.AnAssembly\Heren.Localizer.Demo.AnAssembly.csproj", "{2403ED25-A587-4270-9330-14F78FAA694C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heren.Localization.Demo.AnAssembly", "Heren.Localization.Demo.AnAssembly\Heren.Localization.Demo.AnAssembly.csproj", "{9ED0CD7C-7091-4023-A636-A450DA544C7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{B4B49C94-D5DC-4A81-B782-C64023BB1084}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4B49C94-D5DC-4A81-B782-C64023BB1084}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4B49C94-D5DC-4A81-B782-C64023BB1084}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2403ED25-A587-4270-9330-14F78FAA694C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2403ED25-A587-4270-9330-14F78FAA694C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2403ED25-A587-4270-9330-14F78FAA694C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2403ED25-A587-4270-9330-14F78FAA694C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED0CD7C-7091-4023-A636-A450DA544C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED0CD7C-7091-4023-A636-A450DA544C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED0CD7C-7091-4023-A636-A450DA544C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED0CD7C-7091-4023-A636-A450DA544C7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
