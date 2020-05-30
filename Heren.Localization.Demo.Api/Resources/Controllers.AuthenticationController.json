@@ -1,0 +1,13 @@
+{
+  "EmailNotFound": "The e-mail address you tried to login is not registered in our system.",
+  "WrongPassword": "The password you tried to login is incorrect.",
+  "LockedOut": "Your account has been locked due to failed login attempts. You can log in again after {0}.",
+  "RequiresTwoFactor": "RequiresTwoFactor",
+  "RequiresEmailConfirmation": "You must confirm your e-mail address before login.",
+  "RequiresPhoneConfirmation": "You must confirm your phone number before login.",
+
+  "BadRequestMessage": "BadRequest",
+  "UnauthorizedMessage": "Unauthorized",
+  "ForbiddenMessage": "Forbidden",
+  "ServerErrorMessage": "ServerError"
+}
