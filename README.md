@@ -37,11 +37,11 @@ First of all usage is same with native usage. The only difference is the use of 
 .
 ├── Resources
 │   ├── Controllers.AuthenticationController.json
-│   ├── Controllers.AuthenticationController.tr-TR.json
+│   ├────── Controllers.AuthenticationController.tr-TR.json
 │   ├── Heren.Localizer.Demo.AnAssembly.AClass.json
-│   ├── Heren.Localizer.Demo.AnAssembly.AClass.tr-TR.json
+│   ├────── Heren.Localizer.Demo.AnAssembly.AClass.tr-TR.json
 │   ├── SharedResource.json
-│   └── SharedResource.tr-TR.json
+│   └────── SharedResource.tr-TR.json
 │
 ```
 
