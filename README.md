@@ -1,4 +1,4 @@
-# Heren.Localizer
+# Heren.Localization
 Json Localization library for .NetCore projects.
 
 # Project
