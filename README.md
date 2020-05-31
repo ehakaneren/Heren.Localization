@@ -143,7 +143,7 @@ You can find the demo project and sample usages [here][DemoProject]. You can run
 # Good to Know
 * The resource key searchs in the {culture}.json file. If the culture file is not exists or key not exists in the culture file, then resource key searchs in base file.
 
-* The resource is not reading from file every time. Resource files caches by culture in memory until base file or culture file is modified. So the library is applies memory cache and it expiration depends to files modifications.
+* The resource file is not reading every time. Files caches by culture in memory until the base file or the culture file is modified. So the library is applies memory cache and it expiration depends to files modifications.
 
 [MicrosoftLocalization]: <https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-3.1>
 [DemoProject]: <https://github.com/ehakaneren/Heren.Localizer/tree/master/Demo/Heren.Localization.Demo.Api>
