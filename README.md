@@ -45,7 +45,7 @@ First of all usage is same with native usage. The only difference is the use of 
 │
 ```
 
-# Example 1: Shared Resource Usage
+# Sample 1: Shared Resource Usage
 
 ```csharp
 namespace MyProject.Controllers
@@ -63,7 +63,7 @@ namespace MyProject.Controllers
 ```
 If you use like IStringLocalizer (without generic type), then it reads from Resource/SharedResource.json file.
 
-# Example 2: Generic Type Usage With Same Assembly Model
+# Sample 2: Generic Type Usage With Same Assembly Model
 
 ```csharp
 namespace MyProject.Controllers
@@ -81,7 +81,7 @@ namespace MyProject.Controllers
 ```
 If you use like IStringLocalizer\<AuthenticationController\>, then it reads from Resource/Controllers.AuthenticationController.json file.
 
-# Example 3: Generic Type Usage With Different Assembly Model
+# Sample 3: Generic Type Usage With Different Assembly Model
 
 ```csharp
 namespace MyProject.Controllers
