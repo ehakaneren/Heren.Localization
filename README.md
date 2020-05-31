@@ -141,7 +141,7 @@ You can find the demo project and sample usages [here][DemoProject]. You can run
 * \/api\/anassembly\/message1?culture=tr-TR
 
 # Good to Know
-* The resource key searchs in the {culture}.json file. If the culture file is not exists or key not exists in the culture file, then resource key searchs in base file.
+* The resource key searches in the {culture}.json file. If the culture file is not exists or key not exists in the culture file, then resource key searches in base file.
 
 * The resource file is not reading every time. Files caches by culture in memory until the base file or the culture file is modified. So the library is applies memory cache and it expiration depends to files modifications.
 
