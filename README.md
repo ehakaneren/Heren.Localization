@@ -2,7 +2,7 @@
 Json Localization library for .NetCore projects.
 
 # Project
-This library allows to use JSON files instead of RESX in an ASP.NET application. The code tries to be most compliant with Microsoft guidelines. The library is compatible with NetCore.
+This library allows to use JSON files instead of RESX in an ASP.NET application. The code tries to be most compliant with Microsoft guidelines.
 
 # Configuration
 An extension method is available for IServiceCollection. It has similar configuration and usage with Microsoft guidlines. There is no extra configuration options.
