@@ -4,10 +4,5 @@
   "LockedOut": "Your account has been locked due to failed login attempts. You can log in again after {0}.",
   "RequiresTwoFactor": "RequiresTwoFactor",
   "RequiresEmailConfirmation": "You must confirm your e-mail address before login.",
-  "RequiresPhoneConfirmation": "You must confirm your phone number before login.",
-
-  "BadRequestMessage": "BadRequest",
-  "UnauthorizedMessage": "Unauthorized",
-  "ForbiddenMessage": "Forbidden",
-  "ServerErrorMessage": "ServerError"
+  "RequiresPhoneConfirmation": "You must confirm your phone number before login."
 }
