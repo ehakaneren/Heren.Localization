@@ -1,5 +1,5 @@
 # Heren.Localization
-Json Localization library for .NetCore projects.
+Json localization library for .NetCore projects.
 
 # Project
 This library allows to use JSON files instead of RESX in an ASP.NET application. The code tries to be most compliant with Microsoft guidelines.
@@ -134,8 +134,8 @@ You can find the demo project and sample usages [here][DemoProject]. You can run
 * \/api\/resources\/apple
 * \/api\/resources\/apple?culture=tr-TR
 
-* \/api\/resources\/anassembly
-* \/api\/resources\/anassembly?culture=tr-TR
+* \/api\/anassembly
+* \/api\/anassembly?culture=tr-TR
 
 * \/api\/anassembly\/message1
 * \/api\/anassembly\/message1?culture=tr-TR
