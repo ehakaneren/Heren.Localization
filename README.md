@@ -129,17 +129,17 @@ You can see the demo project for all different samples from [here][DemoProject].
 
 You can find the demo project and sample usages [here][DemoProject]. You can run api project and try this endpoints to see outputs;
 
-/api/resources
-/api/resources?culture=tr-TR
+* \/api\/resources
+* \/api\/resources?culture=tr-TR
 
-/api/resources/apple
-/api/resources/apple?culture=tr-TR
+* \/api\/resources\/apple
+* \/api\/resources\/apple?culture=tr-TR
 
-/api/resources/anassembly
-/api/resources/anassembly?culture=tr-TR
+* \/api\/resources\/anassembly
+* \/api\/resources\/anassembly?culture=tr-TR
 
-/api/anassembly/message1
-/api/anassembly/message1?culture=tr-TR
+* \/api\/anassembly\/message1
+* \/api\/anassembly\/message1?culture=tr-TR
 
 # Good to Know
 * The resource key searchs in the {culture}.json file. If the culture file is not exists or key not exists in the culture file, then resource key searchs in base file.
