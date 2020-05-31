@@ -119,7 +119,6 @@ You can see the demo project for all different samples from [here][DemoProject].
   "EmailNotFound": "Giriş yapmaya çalıştığınız e-posta adresi sistemimizde kayıtlı değildir.",
   "WrongPassword": "Giriş yapmaya çalıştığınız parola hatalıdır.",
   "LockedOut": "Hesabınız başarısız giriş denemeleri nedeniyle kilitlenmiştir. {0} sonra tekrar giriş yapabilirsiniz.",
-  "RequiresTwoFactor": "tr-RequiresTwoFactor",
   "RequiresEmailConfirmation": "Giriş yapmak için önce e-posta adresinizi onaylamanız gerekmektedir.",
   "RequiresPhoneConfirmation": "Giriş yapmak için önce telefon numaranızı onaylamanız gerekmektedir."
 }
