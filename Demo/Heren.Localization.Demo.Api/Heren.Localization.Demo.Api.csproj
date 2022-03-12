@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
 	  <TargetFramework>net6.0</TargetFramework>
@@ -8,6 +8,5 @@
     <ProjectReference Include="..\..\Src\Heren.Localization\Heren.Localization.csproj" />
     <ProjectReference Include="..\Heren.Localization.Demo.AnAssembly\Heren.Localization.Demo.AnAssembly.csproj" />
   </ItemGroup>
-
-
+	
 </Project>
