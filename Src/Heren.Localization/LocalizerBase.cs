@@ -28,12 +28,15 @@ namespace Heren.Localization
         protected virtual LocalizedString GetString(string name, params object[] arguments)
         {
             var resourceContainer = GetResourceContainerFromCache();
+            var @default = new LocalizedString(name, name, true, resourceContainer.ResourcePath);
 
-            var value = resourceContainer.Resources.GetValueOrDefault(name);
-            if (string.IsNullOrWhiteSpace(value))
-                return new LocalizedString(name, name, true, resourceContainer.ResourcePath);
+            if (!resourceContainer.Resources.TryGetValue(name, out var resource))
+                return @default;
 
-            return new LocalizedString(name, string.Format(value, arguments), false, resourceContainer.ResourcePath);
+            if (string.IsNullOrWhiteSpace(resource))
+                return @default;
+
+            return new LocalizedString(name, string.Format(resource, arguments), false, resourceContainer.ResourcePath);
         }
 
         protected virtual IEnumerable<LocalizedString> GetAllStrings()
@@ -59,22 +62,14 @@ namespace Heren.Localization
             if (File.Exists(baseResourcePath))
             {
                 var baseContent = File.ReadAllText(baseResourcePath);
-#if NETCOREAPP3_0_OR_GREATER
-                baseResource = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(baseContent);
-#else
                 baseResource = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(baseContent);
-#endif
             }
 
             Dictionary<string, string> cultureResource = null;
             if (File.Exists(cultureResourcePath))
             {
                 var cultureContent = File.ReadAllText(cultureResourcePath);
-#if NETCOREAPP3_0_OR_GREATER
-                cultureResource = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(cultureContent);
-#else
                 cultureResource = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(cultureContent);
-#endif
             }
 
             var resources = MergeResources(baseResource, cultureResource);
