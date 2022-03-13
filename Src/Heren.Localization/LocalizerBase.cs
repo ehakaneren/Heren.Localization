@@ -62,22 +62,14 @@ namespace Heren.Localization
             if (File.Exists(baseResourcePath))
             {
                 var baseContent = File.ReadAllText(baseResourcePath);
-#if NETCOREAPP3_0_OR_GREATER
-                baseResource = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(baseContent);
-#else
                 baseResource = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(baseContent);
-#endif
             }
 
             Dictionary<string, string> cultureResource = null;
             if (File.Exists(cultureResourcePath))
             {
                 var cultureContent = File.ReadAllText(cultureResourcePath);
-#if NETCOREAPP3_0_OR_GREATER
-                cultureResource = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(cultureContent);
-#else
                 cultureResource = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(cultureContent);
-#endif
             }
 
             var resources = MergeResources(baseResource, cultureResource);
