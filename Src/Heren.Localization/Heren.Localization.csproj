@@ -11,6 +11,8 @@
 		<PackageTags>.net core localization</PackageTags>
 		<Description>A simple json localization library for .NetCore projects</Description>
 		<Copyright>© 2022 Hakan EREN</Copyright>
+		<PackageReleaseNotes>All .NetCore Versions Supported</PackageReleaseNotes>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
