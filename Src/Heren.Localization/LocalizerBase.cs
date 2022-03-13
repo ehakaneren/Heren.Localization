@@ -28,12 +28,15 @@ namespace Heren.Localization
         protected virtual LocalizedString GetString(string name, params object[] arguments)
         {
             var resourceContainer = GetResourceContainerFromCache();
+            var @default = new LocalizedString(name, name, true, resourceContainer.ResourcePath);
 
-            var value = resourceContainer.Resources.GetValueOrDefault(name);
-            if (string.IsNullOrWhiteSpace(value))
-                return new LocalizedString(name, name, true, resourceContainer.ResourcePath);
+            if (!resourceContainer.Resources.TryGetValue(name, out var resource))
+                return @default;
 
-            return new LocalizedString(name, string.Format(value, arguments), false, resourceContainer.ResourcePath);
+            if (string.IsNullOrWhiteSpace(resource))
+                return @default;
+
+            return new LocalizedString(name, string.Format(resource, arguments), false, resourceContainer.ResourcePath);
         }
 
         protected virtual IEnumerable<LocalizedString> GetAllStrings()
