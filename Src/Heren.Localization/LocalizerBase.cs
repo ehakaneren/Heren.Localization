@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
-using System.Text.Json;
 
 namespace Heren.Localization
 {
@@ -60,14 +59,22 @@ namespace Heren.Localization
             if (File.Exists(baseResourcePath))
             {
                 var baseContent = File.ReadAllText(baseResourcePath);
-                baseResource = JsonSerializer.Deserialize<Dictionary<string, string>>(baseContent);
+#if NETCOREAPP3_0_OR_GREATER
+                baseResource = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(baseContent);
+#else
+                baseResource = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(baseContent);
+#endif
             }
 
             Dictionary<string, string> cultureResource = null;
             if (File.Exists(cultureResourcePath))
             {
                 var cultureContent = File.ReadAllText(cultureResourcePath);
-                cultureResource = JsonSerializer.Deserialize<Dictionary<string, string>>(cultureContent);
+#if NETCOREAPP3_0_OR_GREATER
+                cultureResource = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(cultureContent);
+#else
+                cultureResource = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(cultureContent);
+#endif
             }
 
             var resources = MergeResources(baseResource, cultureResource);
