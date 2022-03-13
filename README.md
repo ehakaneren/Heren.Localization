@@ -5,7 +5,7 @@ Json localization library for .NetCore projects.
 This library allows to use JSON files instead of RESX in an ASP.NET application. The code tries to be most compliant with Microsoft guidelines.
 
 # Nuget Installation
-[![NuGet](https://user-images.githubusercontent.com/15619305/158041973-5ce5baa9-6d2d-4ff3-836f-f6ef242bacb7.png)](https://www.nuget.org/packages/Heren.Localization/)
+[![NuGet](https://img.shields.io/nuget/v/Heren.Localization)](https://www.nuget.org/packages/Heren.Localization/)
 
 ```PowerShell
 PM > Install-Package Heren.Localization
